@@ -13,16 +13,16 @@
     <!-- start of flexbox -->
     <section id="flexBox">
         <div class="container">
-            <div class="box box1">1</div>
-            <div class="box box2">2</div>
-            <div class="box box3">3</div>
+            <div class="box box1">😇 </div>
+            <div class="box box2">😢 </div>
+            <!-- <div class="box box3">3</div>
             <div class="box box4">4</div>
             <div class="box box5">5</div>
             <div class="box box6">6</div>
             <div class="box box7">7</div>
             <div class="box box8">8</div>
             <div class="box box9">9</div>
-            <div class="box box10">10</div>
+            <div class="box box10">10</div> -->
             
         </div>
     </section>
@@ -34,25 +34,23 @@
 
         .container {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            /* using min-height because we need to create free space for our content to be aligned */
-            /* min-height: 100vh; */
             
         }
 
-        .box3{
-            /* it is the property of flex-item */ 
-           flex-grow: 4;
-           flex-shrink:0 ;
-        }
-        .box5{
-            /* it is the property of flex-item */ 
-           flex-grow: 7;
-           flex-shrink:0 ;
-        }
-       
+/* when there isn't an extra space then flex-shrink kicks in. It tells an item that how much should it shrink */
 
+        .box1{
+            
+           flex-shrink:1 ;
+           flex-basis: 500px;
+        }
+        .box2{
+            
+           flex-shrink:2 ; 
+           flex-basis: 500px;
+        }
+/* in above given scenario bot boxes are of 500px but when browser window size is less than 1000px box2 will shrink twice as that of box1*/
+       
     </style>
 
     <!-- end styling of flexbox -->
