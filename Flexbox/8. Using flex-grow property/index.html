@@ -23,6 +23,7 @@
             <div class="box box8">8</div>
             <div class="box box9">9</div>
             <div class="box box10">10</div>
+            
         </div>
     </section>
     <!-- end of flexbox -->
@@ -35,18 +36,23 @@
             display: flex;
             flex-direction: row;
 
-            /* justify-content is the property for flex container (the div that contains all the flex-items) . what it does is that it sets the postion of content inside flex-container.
-                justify content works on spaces. it sets the position of content on the basis of available space.  
-                
-                most importantly this property only applies on the ""main axis""    */
+            /* using min-height because we need to create free space for our content to be aligned */
+            /* min-height: 100vh; */
             
-            justify-content: center;
-
-            /* justify-content: flex-start | flex-end | center | space-between |  space-around | space-evenly; */
-
-            /* just use above given properties one by one for better understanding */
         }
 
+        .box1{
+            /* it is the property of flex-item */ 
+           flex-grow: 1;
+        }
+        .box4{
+            /* it is the property of flex-item */ 
+           flex-grow: 2;
+        }
+        .box8{
+            /* it is the property of flex-item */ 
+           flex-grow: 3;
+        }
 
     </style>
 

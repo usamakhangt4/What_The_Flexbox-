@@ -35,14 +35,13 @@
             display: flex;
             flex-direction: row;
 
-            /* justify-content is the property for flex container (the div that contains all the flex-items) . what it does is that it sets the postion of content inside flex-container.
-                justify content works on spaces. it sets the position of content on the basis of available space.  
-                
-                most importantly this property only applies on the ""main axis""    */
+            /* align-items property works on "cross-axis". right now we are using flex-direction of row that why our cross axis
+            is from top to bottom . we have to give our flex conatiner a specific height in order to use this property*/
+            /* min-height: 100vh; */
             
-            justify-content: center;
+            align-items: center;
 
-            /* justify-content: flex-start | flex-end | center | space-between |  space-around | space-evenly; */
+            /* align-items:  align-items: stretch | flex-start | flex-end | center | baseline; */
 
             /* just use above given properties one by one for better understanding */
         }
