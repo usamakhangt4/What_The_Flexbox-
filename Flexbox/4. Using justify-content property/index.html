@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../BasicStyles/styles.css">
+    <title>What the Flexbox!!!</title>
+</head>
+
+<body>
+    <!-- start of flexbox -->
+    <section id="flexBox">
+        <div class="container">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+            <div class="box box4">4</div>
+            <div class="box box5">5</div>
+            <div class="box box6">6</div>
+            <div class="box box7">7</div>
+            <div class="box box8">8</div>
+            <div class="box box9">9</div>
+            <div class="box box10">10</div>
+        </div>
+    </section>
+    <!-- end of flexbox -->
+
+    <!-- Start styling of flexbox -->
+
+    <style>
+
+        .container {
+            display: flex;
+            flex-direction: row;
+
+            /* justify-content is the property for flex container (the div that contains all the flex-items) . what it does is that it sets the postion of content inside flex-container.
+                justify content works on spaces. it sets the position of content on the basis of available space.  
+                
+                most importantly this property only applies on the ""main axis""    */
+            
+            justify-content: center;
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+
+            /* just uncomment abouve giver properties one by one for better understanding */
+        }
+
+
+    </style>
+
+    <!-- end styling of flexbox -->
+
+
+</body>
+
+</html>
