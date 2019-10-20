@@ -14,7 +14,7 @@
     <section id="flexBox">
         <div class="container">
             <div class="box box1">😇 </div>
-            <div class="box box2">😢 </div>
+            <div class="box box2">😍 </div>
             <!-- <div class="box box3">3</div>
             <div class="box box4">4</div>
             <div class="box box5">5</div>
@@ -36,21 +36,18 @@
 
         }
 
-        /* when there isn't an extra space then flex-shrink kicks in. It tells an item that how much should it shrink */
+        /*   flex-basis tells an element its actual size . In current situation even 
+             if there is an extra space or not these boxes will remain of the given size e.g 500px  */
 
         .box1 {
-
-            flex-shrink: 1;
             flex-basis: 500px;
         }
 
         .box2 {
-
-            flex-shrink: 2;
             flex-basis: 500px;
         }
 
-        /* in above given scenario bot boxes are of 500px but when browser window size is less than 1000px box2 will shrink twice as that of box1*/
+        /* in above given scenario bot boxes are of 500px */
     </style>
 
     <!-- end styling of flexbox -->
